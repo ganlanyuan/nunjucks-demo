@@ -1,23 +1,23 @@
-Nunjucks-demo
-Seprate markup and data
+## Nunjucks-demo
+Seprate markup and data  
 
-1. Preparation: 
-   a. folder structure, file extensions and syntax highlighter
-   b. auto compiling (gulp task)
+1.  Preparation: 
+   1.  folder structure, file extensions and syntax highlighter
+   2.  auto compiling (gulp task)
    
-2. Templating docs
-   a. variables
-   b. extends - block(super) [layout]
-   c. include [conponents] 
-   d. for loop
-   e. macro
-   f. some useful filters
-      f.1. random | javascript function
-      f.2. truncate
-      f.3. upper | lower | capitalize | title
-   g. spacing
+2.  Templating docs
+   1.  variables
+   2.  extends - block(super) [layout]
+   3.  include [conponents] 
+   4.  for loop
+   5.  macro
+   6.  some useful filters
+      1.  random | javascript function
+      2.  truncate
+      3.  upper | lower | capitalize | title
+   6.  spacing
 
-Links
-https://mozilla.github.io/nunjucks/
-https://css-tricks.com/component-led-design-patterns-nunjucks-grunt/
-http://garann.github.io/template-chooser/
+##### Links
+https://mozilla.github.io/nunjucks/  
+https://css-tricks.com/component-led-design-patterns-nunjucks-grunt/  
+http://garann.github.io/template-chooser/  
