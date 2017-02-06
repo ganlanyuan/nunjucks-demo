@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nunjucks - {{ pagename }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <style>
+    ul, ol { 
+      margin: 0; 
+      padding: 0;
+    }
+    li { list-style: none; }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    .current a { color: red; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <p>header</p>
+  <ul>
+    {% for item in nav %}
+      <li class="{% if item === pagename %}{{ 'current' }} {% endif %}"><a href="{{ item | replace('Home', 'index') | lower }}.html">{{ item }}</a></li>
+    {% endfor %}
+  </ul>
+</header>
+
+{% block main %}
+<div class="main">main contents </div>
+{% endblock %}
+
+<footer class="site-footer">
+  <p>footer</p>
+</footer>
+</body>
+</html>

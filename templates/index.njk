@@ -1,0 +1,16 @@
+{% set pagename = "Home" %}
+{% extends "partials/layout.njk" %}
+
+{% block main %}
+<div class="sidebar">
+  <ul>
+    {% for i in range(0, 5) %}
+      {% set ic = getImageCount() %}
+      <li>
+        <img src="{{ images[ic] }}?w=100&h=80" alt="">
+        <h4>{{ headings[ic] | title }}</h4>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
